@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "antd";
-import { HomeOutlined, ProfileOutlined, FileProtectOutlined } from "@ant-design/icons";
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined, GithubOutlined } from "@ant-design/icons";
 
 const Nav = ({ current }) => {
     return (
@@ -23,6 +23,12 @@ const Nav = ({ current }) => {
                     <Link to="/protected">
                         <FileProtectOutlined />
                         Protected
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key="morepublic">
+                    <Link to="/morepublic">
+                        <GithubOutlined />
+                        More Public
                     </Link>
                 </Menu.Item>
             </Menu>
